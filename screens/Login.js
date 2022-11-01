@@ -28,15 +28,15 @@ export default function Login({route,navigation}){
 
 
 <View style={{ flex: 2, alignItems:"center", paddingTop:120}}>
-<Input  leftIcon={{ type: 'font-awesome', name: 'user' }} placeholder='nome'/>
-<Input  leftIcon={{ type: 'font-awesome', name: 'lock' }} placeholder="cpf" secureTextEntry={true} />
+<Input  leftIcon={{ type: 'font-awesome', name: 'user' }} placeholder='login'/>
+<Input  leftIcon={{ type: 'font-awesome', name: 'lock' }} placeholder="senha" secureTextEntry={true} />
 </View>
   
 <View style={{ flex: 2, alignItems:"center", paddingTop:50}} >
 <Button title="Login"
 onPress={()=>navigation.navigate('ListaContatos')}
 />
-<Button title="Cadastrar-se"
+<Button style={{  paddingTop:50}} title="Cadastrar-se"
 onPress={()=>navigation.navigate('CadastroUsuario')}
 />
 </View>

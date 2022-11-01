@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { Input } from 'react-native-elements';
 import { Button } from 'react-native-elements';
 
-export default function Contatos({route,navigation}){
+export default function CadastroContato({route,navigation}){
 
 
   return (
@@ -23,8 +23,7 @@ export default function Contatos({route,navigation}){
   
   
 <View style={{ flex: 2, alignItems:"center", paddingTop:50}} >
-<Button style={{ marginTop:50}} title="alterar"/>
-<Button style={{ marginTop:50}} title="excluir"/>
+<Button style={{ marginTop:50}} title="Salvar"/>
 </View>
 </View>
 );};
