@@ -16,14 +16,12 @@ export default function CadastroUsuario({route,navigation}){
 
 
 <View style={{ flex: 4, alignItems:"center", paddingTop:120}}>
-<Input placeholder='nome'/>
-<Input placeholder="cpf" secureTextEntry={true} />
 <Input placeholder="email" secureTextEntry={true} />
 <Input placeholder="Senha" secureTextEntry={true} />
 </View>
   
   
-<View style={{ flex: 2, alignItems:"center", paddingTop:50}} >
+<View style={{ flex: 2, alignItems:"center", paddingTop:100}} >
 <Button style={{ marginTop:50}} title="Salvar"/>
 </View>
 </View>

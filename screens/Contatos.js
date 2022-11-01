@@ -15,15 +15,17 @@ export default function Contatos({route,navigation}){
   }]}>
 
 
-<View style={{ flex: 4, alignItems:"center", paddingTop:120}}>
+<View style={{ flex: 2, alignItems:"center", paddingTop:120}}>
 <Input placeholder='nome'/>
 <Input placeholder="email" secureTextEntry={true} />
 <Input placeholder="telefone" secureTextEntry={true} />
 </View>
   
   
-<View style={{ flex: 2, alignItems:"center", paddingTop:50}} >
+<View >
 <Button style={{ marginTop:50}} title="alterar"/>
+</View>
+<View style={{ paddingTop:20}}>
 <Button style={{ marginTop:50}} title="excluir"/>
 </View>
 </View>

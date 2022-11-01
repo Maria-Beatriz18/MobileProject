@@ -1,3 +1,4 @@
+import { useEffect,useState } from 'react';
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Avatar } from 'react-native-elements';
@@ -14,7 +15,7 @@ export default function Login({route,navigation}){
   flexDirection: "column"
   }]}>
 
-<View style={{ flex: 2,alignItems:"center", paddingTop:50}} >
+<View style={{ flex: 1,alignItems:"center", paddingTop:50}} >
   <Avatar
   rounded
   size="xlarge"
@@ -27,16 +28,19 @@ export default function Login({route,navigation}){
 
 
 
-<View style={{ flex: 2, alignItems:"center", paddingTop:120}}>
-<Input  leftIcon={{ type: 'font-awesome', name: 'user' }} placeholder='login'/>
-<Input  leftIcon={{ type: 'font-awesome', name: 'lock' }} placeholder="senha" secureTextEntry={true} />
+<View style={{ flex: 1, alignItems:"center", paddingTop:20}}>
+<Input  leftIcon={{ type: 'font-awesome', name: 'user', color:'white' }} placeholder={' login'}/>
+<Input  leftIcon={{ type: 'font-awesome', name: 'lock' , color:'white'}} placeholder={" senha"} secureTextEntry={true} />
 </View>
   
-<View style={{ flex: 2, alignItems:"center", paddingTop:50}} >
+<View style={{ paddingTop:40}} >
 <Button title="Login"
 onPress={()=>navigation.navigate('ListaContatos')}
 />
-<Button style={{  paddingTop:50}} title="Cadastrar-se"
+</View>
+
+<View style={{ paddingTop:20}}>
+<Button title="Cadastrar-se"
 onPress={()=>navigation.navigate('CadastroUsuario')}
 />
 </View>
@@ -47,6 +51,7 @@ const styles = StyleSheet.create({
   container: {
   flex: 1,
   padding: 20,
+  backgroundColor:'black'
   },
   });
 
