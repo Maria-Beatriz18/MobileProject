@@ -5,6 +5,9 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { Input } from 'react-native-elements';
 import { Button } from 'react-native-elements';
 
+
+import { showMessage, hideMessage } from "react-native-flash-message";
+
 export default function CadastroUsuario({route,navigation}){
 
 
