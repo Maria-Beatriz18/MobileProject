@@ -26,7 +26,8 @@ export default function Contatos({route,navigation}){
 <Button style={{ marginTop:50}} title="alterar"/>
 </View>
 <View style={{ paddingTop:20}}>
-<Button style={{ marginTop:50}} title="excluir"/>
+<Button style={{ marginTop:50}} title="excluir"
+ buttonStyle={{backgroundColor: 'red'}} style={{ paddingTop: 10, color:'red' }}/>
 </View>
 </View>
 );};

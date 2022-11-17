@@ -55,6 +55,7 @@ export default function ListaContatosScreen({ route, navigation }) {
                                 <ListItem.Content>
                                     <ListItem.Title>{l.nome}</ListItem.Title>
                                     <ListItem.Subtitle>{l.cpf}</ListItem.Subtitle>
+                                    <ListItem.Subtitle>{l.email}</ListItem.Subtitle>
                                 </ListItem.Content>
                             </ListItem>
                         ))
